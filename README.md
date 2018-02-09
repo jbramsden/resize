@@ -1,7 +1,10 @@
 Resize
 ======
 
+Identical to nfmt/resize, but I've added a Square Thumbnail function to allow me to rezie images also in a square format. I needed this for uploading photos to Instagram.
+
 Image resizing for the [Go programming language](http://golang.org) with common interpolation methods.
+
 
 [![Build Status](https://travis-ci.org/nfnt/resize.svg)](https://travis-ci.org/nfnt/resize)
 
@@ -72,9 +75,8 @@ func main() {
 	}
 	file.Close()
 
-	// resize to width 1000 using Lanczos resampling
-	// and preserve aspect ratio
-	m := resize.Resize(1000, 0, img, resize.Lanczos3)
+	// Create a square image of 650
+	m := Square(img, 650, resize.Lanczos3)
 
 	out, err := os.Create("test_resized.jpg")
 	if err != nil {
