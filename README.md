@@ -1,7 +1,7 @@
 Resize
 ======
 
-Identical to nfmt/resize, but I've added a Square Thumbnail function to allow me to rezie images also in a square format. I needed this for uploading photos to Instagram.
+Identical to nfmt/resize, but I've added a Square Thumbnail function to allow me to resize images also in a square format. I needed this for uploading photos to Instagram.
 
 Image resizing for the [Go programming language](http://golang.org) with common interpolation methods.
 
