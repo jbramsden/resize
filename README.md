@@ -36,6 +36,7 @@ The resize package provides 2 functions:
 ```go
 resize.Resize(width, height uint, img image.Image, interp resize.InterpolationFunction) image.Image
 resize.Thumbnail(maxWidth, maxHeight uint, img image.Image, interp resize.InterpolationFunction) image.Image
+resize.Square(img image.Image, px int, interp resize.InterpolationFunction) image.Image
 ```
 
 The provided interpolation functions are (from fast to slow execution time)
